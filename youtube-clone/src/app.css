@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 50em;
   height: 4em;
   margin: 0 auto;
   background-color: black;
@@ -37,12 +37,19 @@
 .video-card {
   display: flex;
   list-style: none;
-  max-width: 380px;
-  margin: 0 auto;
   border: 1px solid gray;
+  margin: 0.2em;
 }
 .video-card-image img {
   max-width: 10rem;
 }
-.video-card-desc {
+
+/* Cards */
+.video-cards {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  width: 50em;
+  margin: 0 auto;
+  padding: 0;
 }
